@@ -1,0 +1,353 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px;
+    overflow-y: scroll;
+/*    font-family: Raleway;*/
+}
+a,a:hover{
+ color: #e08026; 
+}
+
+
+
+.centered {
+  text-align: center;
+  color: #fff;
+}
+
+
+
+
+
+/*banner*/
+#topupmenu{
+  background-color: rgb(239,239,239);
+}
+
+#brandlook{
+  background-color: rgb(54,54,54);
+  color: rgb(224,128,38);
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+#brandlook .logo{
+    font-family: 'Dancing Script', Georgia, Times, serif;
+    font-size: 35px;
+    line-height: 25px;
+    /*color: #e08026 !important;*/
+}
+
+#brandlook .contactinfo{
+    text-align: right;
+    margin-top: 25px;
+}
+
+
+
+/* Navigation */
+
+.navbar-nav{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.navbar-default {
+    font-size: 15px;
+    background-color: rgba(224, 128, 38, 1) !important;
+    border-width: 1px;
+    border-radius: 0px;
+
+}
+
+
+.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus {
+  color: #fbfbfb;
+}
+
+.navbar-default .navbar-text {
+  color: #f9f9f9;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(224, 128, 38, 1);
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+    color: rgba(252, 252, 252, 1);
+    background-color: rgba(250, 159, 85, 1);
+}
+
+.navbar-fixed-top{
+  position: relative;
+  margin-bottom: -20px;
+  margin-top: -50px;
+}
+
+
+
+
+.dropdown-menu { background-color: #FFFFFF}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { 
+  background-color: #e08026;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(217, 111, 11, 1);
+
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #d96f0b;
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+    background-color: #d96f0b;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f9f9f9;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #f9f9f9;
+}
+.navbar-default .navbar-link {
+  color: #f9f9f9;
+}
+.navbar-default .navbar-link:hover {
+  color: #fbfbfb;
+}
+
+
+
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #f9f9f9;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fbfbfb;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fbfbfb;
+    background-color: #ff6500;
+  }
+
+}
+
+
+
+
+/*custom navbar */
+
+.navbar-brand{
+   font-family: 'Dancing Script', Georgia, Times, serif;
+    font-size: 35px;
+    line-height: 25px;
+    color: #e08026 !important;
+}
+
+.navbar-brand:hover{
+  color: #FFFFFF !important;
+}
+
+
+/*search bar*/
+
+
+/*#searchForm {
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    top: 30%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0px;
+    margin-left: -30%;
+    text-align: center;
+    list-style: outside none none;
+}
+*/
+
+/*SEARCH BOX*/
+#searchbox {
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    top: 40%;
+    text-align: center;
+    list-style: outside none none;
+}
+
+
+/*forsalesearchbox*/
+#searchbox #searchformboxin {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin: 0px auto;
+    padding: 20px;
+
+}
+
+#searchbox #searchformaddbox {
+    color: #FFF;
+    font-size: 138.5%;
+    text-align: center;
+}
+
+#searchbox select {
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 3px;
+  color: #111;
+}
+
+
+@media (max-width: 480px) {
+  #searchbox #searchformboxin {
+    margin-top: -50px;
+  }
+
+  #searchbox{
+  top: 30%;
+}
+
+}
+
+.form-control,.selectpicker { 
+  margin-bottom: 10px; 
+}
+.form-control:focus {
+  border-color: #e08026;
+  box-shadow: 0px 1px 1px rgb(224,128,38) inset, 0px 0px 8px rgb(224,128,38);
+}
+
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+
+.btn-warning {
+  background-color: #e08026;
+  border-color: #e08026;
+  color: #FFFFFF;
+}
+
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #cf731e;
+  border-color: #b9671a;
+  color: #FFFFFF;
+
+}
+
+
+
+/*FOOTER*/
+#footer-bottom {
+    background: rgb(54,54,54)  none repeat scroll 0% 0%;
+    color: #111;
+    /*background: #555 none repeat scroll 0% 0%;*/
+    /*color: #D6D6D6;*/
+    font-size: 15px;
+    padding: 20px 0px;
+    margin-top: 20px;
+
+}
+
+.social-icons {
+padding-left: 0px;
+margin-bottom: 7px;
+text-align: right;
+
+}
+
+.copy {
+  padding-top: 20px;
+  float: left;
+  color: #FFFFFF;
+}
+
+
+.social-roll {
+    border-radius: 12px;
+    height: 25px;
+    line-height: 26px;
+    width: 25px;
+    text-align: center;
+    background: #FFF none repeat scroll 0% 0%;
+    margin-top: 15px;
+    padding-top: 5px;
+
+}
+
+
+.tooltip-inner {
+  background-color: rgb(224,128,38);
+}
+.tooltip.top .tooltip-arrow { 
+  border-top-color:rgb(224,128,38); 
+}
+
+
+.silast{
+  padding-right: 15px;
+}
+
+
+
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > a{
+  background-color: #E08026;
+  border-color: #E08026;
+}
+
+.pagination > li > a,.pagination > .active > li > a{
+  color: #E08026;
+}
+
+
+/*.pagination>li>a, .pagination>li>span { border-radius: 50% !important;margin: 0 5px;}
+*/
+.pull-center{
+  text-align: center;
+}
+
+
+.input-group{
+  margin-bottom: 25px;
+}
+
+.forgotpass{
+  /*margin-top: 10px;*/
+  text-align: right;
+}
